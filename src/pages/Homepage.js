@@ -126,7 +126,7 @@ function Homepage() {
               </Typography>
             </Grid>
             <Grid item>
-              <Button variant="outlined" onClick={handleTogglePause} disabled={!selectedZip && !selectedDestination}>
+              <Button variant="outlined" onClick={handleTogglePause} disabled={!selectedZip || !selectedDestination}>
                 {paused ? <PlayArrowIcon /> : <PauseIcon />}
                 {paused ? 'Play' : 'Pause'}
               </Button>
